@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* (wrap-reverse,nowrap) */
+    /* flex-flow: column wrap; (flex-direction+flex-wrap) */
+}
+
+.box1{
+    /* flex: 3; (flex-grow,flex-shrink,flex-basis)*/
+    border: 2px solid red;
+    height: 150px;
+    padding-top: 2%;
+    font-style: italic;
+    font-size: large;
+    color: blueviolet;
+    width: 200px;
+    order: 2;
+
+}
+
+.box2{
+    /* flex:1; */
+    border: 2px solid green;
+    height: 150px;
+    padding-top: 2%;
+    font-style: oblique;
+    font-size: medium;
+    color: peru;
+    width: 200px;
+    order: 3;
+}
+
+.box3{
+    /* flex: 1; */
+    border: 3px solid blue;
+    height: 150px;
+    padding-top: 2%;
+    font-style: italic;
+    font-size: small;
+    color: gold;
+    width: 200px;
+    order: 1;
+}
+
+
+

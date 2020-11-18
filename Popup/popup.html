@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="popup.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width. initial-scale=1.0">
+        <title>PopUp-Exercise</title>
+    </head>
+
+    <body>
+        <section class="main">
+            <div>
+                <input type="text" id="email" name="email" placeholder="Email or Phone Number">
+            </div>
+
+            <div>
+                <input type="password" id="pass" name="pass" placeholder="Password">
+            </div>
+                
+            <div>
+                <button type="submit" id="submit" name="submit">Log In</button>
+            </div>
+
+            <div>
+                <a href="recover.html" class="btn">Forgot your password?</a>
+            </div>
+
+                <a href="#popup" class="popup-open btn">Create New Account</a>
+                <div class="popup" id="popup">
+                    <div class="popup-content">
+                        <div class="other">
+                                <h3>Sign Up</h3>
+                                <h5>It's quick and easy.</h5>
+        
+                            <input type="text" id="firstname" name="firstname" placeholder="First name" required>
+                            <input type="text" id="lastname" name="lastname" placeholder="Last name" required>
+                                </br>
+                            <input type="text" id="email" name="email" placeholder="Mobile number or Email" required>
+                                </br>
+                            <input type="password" id="pass" name="pass" placeholder="New Password" required>
+                                 </br>
+        
+                            <label for="bday">
+                                <h6>Birthday</h6>
+                            </label>
+                            <input type="date" id="bday" name="bday">
+        
+                                </br>
+        
+                            <label for="gender">
+                                <h6>Gender</h6>
+                            </label>
+                            
+                                <input type="radio" id="female" name="gender">
+                                    <label for="female">Female</label>
+        
+                                    <input type="radio" id="male" name="gender">
+                                    <label for="male">Male</label>
+        
+                                    <input type="radio" id="custom" name="gender">
+                                    <label for="custom">Custom</label>
+        
+                                    </br>
+        
+                            <button type="submit">Sign Up</button>
+                                <a href="#" class="popup-close">&times;</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+        </body>
+    </html>

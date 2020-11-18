@@ -1,0 +1,58 @@
+*{
+    margin: 50px 40px;
+
+}
+
+body{
+    background-color: rgb(196, 198, 199);
+}
+
+table{
+    /* border: 1px solid teal; /Kako da stavam ramka okolu tabela so zaobleni kraevi?!/ */
+    border-radius: 30px;
+    padding: 5px;
+    overflow: hidden;
+    border-collapse: collapse;
+    width: 1000;
+    text-align: center;
+    background-color: rgb(135, 250, 233);
+    color: teal;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#usr{
+    height: 50;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    font-style: normal;
+}
+
+tr[rel^="w"]{
+    background-color: beige;
+}
+
+img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    padding: 5px;
+    overflow: hidden;
+    border: 1px solid teal;
+}
+
+td[id="comm"]{
+    width: 250;
+    text-align: left;
+    font-weight: normal;
+    font-style: italic;
+}
+
+a{
+    color: teal;
+    font-style: italic;
+}
+

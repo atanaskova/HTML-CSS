@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <h2>
+            Create New Work Flow
+        </h2>
+
+        <table style="width:1100; text-align: left;">
+            <thead>
+                <tr>
+                    <th>
+                        <label for="name">Flow Name:</label>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="text" id="name" name="name"></input>
+                    </td>
+                </tr>
+            </tbody>
+
+            <thead>
+                <tr>
+                    <th>
+                        <label for="depart">Department:</label>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <select id="depart">
+                            <option value="hhs">Health and Human Services</option>
+                            <option value="energy">Energy</option>
+                            <option value="Education">Education</option>
+                            <option value="def">Defense</option>
+                            <option selected value="hhs">Egineering Maintenance</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+
+            <thead>
+                <tr>
+                    <th colspan="8">
+                    <button style="background-color: green; color: white; float:right;">
+                        <i class="fa fa-plus-circle"></i>
+                        Add Flow
+                    </button>
+                    </th>
+                </tr>
+            </thead>
+
+            <thead>
+                <tr>
+                    <th>
+                        Step Number
+                    </th>
+                    <th>
+                        Status
+                    </th>
+                    <th>
+                        Author
+                    </th>
+                    <th>
+                        SentBack
+                    </th>
+                    <th>
+                        Check
+                    </th>
+                    <th>
+                        Approve
+                    </th>
+                    <th>
+                        Reject
+                    </th>
+                    <th>
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        Awaiting Approval Supervisor
+                    </td>
+                    <td>
+                        approvalsupervisor@gmail.com
+                    </td>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <button>
+                            <i class="fa fa-pencil-square-o"></i>
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        2
+                    </td>
+                    <td>
+                        Awaiting Accepted by Head Department
+                    </td>
+                    <td>
+                        approvalheaddepartment@gmail.com
+                    </td>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <button>
+                            <i class="fa fa-pencil-square-o"></i>
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+
+            <thead>
+                <tr>
+                    <th colspan="8">
+                            <button style="background-color: honeydew; color: black; float:left;">
+                            Back
+                            </button>
+
+                            <input type="submit" style="background-color: aqua; color: white; float:right"> 
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,247 @@
+:root{
+    --primarycolor: rgba(248, 154, 66, 0.986);
+    --secondarycolor: rgba(88, 88, 90, 0.782);
+    --lightcolor: floralwhite;
+    --othercolor: darksalmon;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    text-align: center;
+    line-height: 1.5;
+    background-color: var(--secondarycolor);
+}
+
+.main{
+    border-radius: 15px;
+    margin: auto;
+    width: 300px;
+    height: 250px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    background-color: darkred;
+}
+
+a{
+    text-align: center;
+    color: var(--lightcolor);
+    text-decoration: none;
+    font-size: small;
+    font-style: italic;
+    margin: 8px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 1px solid var(--secondarycolor);
+    border-radius: 10px;
+    display: inline-block;
+    background-color: transparent;
+    transition: .4s;
+    margin: 8px;
+}
+
+.btn:hover{
+    background-color: var(--secondarycolor);
+    color: var(--lightcolor);
+}
+
+::placeholder{
+    color: var(--lightcolor);
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    text-align: center;
+}
+
+input{
+    align-items: center;
+    padding: 5px;
+    width: 300px;
+    height: 25px;
+    justify-content: center;
+    margin: 8px;
+    border-radius: 10px;
+    border: 2px solid var(--secondarycolor);
+    background-color: var(--primarycolor);
+}
+
+.radio{
+    font-size: medium;
+    font-style: italic;
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+}
+
+button{
+    border-radius: 10px;
+    border: 2px solid var(--secondarycolor);
+    background-color: var(--primarycolor);
+    color: var(--lightcolor);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    width: 80px;
+    height: 25px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.reset{
+    background-color: rgba(10, 8, 79, 0.911);
+    opacity: 0.7;
+    border-radius: 15px;
+    margin: auto;
+    width: 300px;
+    height: 250px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+}
+
+.reset legend{
+    font-size: x-large;
+    font-style: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--lightcolor);
+}
+
+.reset label{
+    color: var(--lightcolor);
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.reset input{
+    background-color: var(--othercolor);
+}
+
+.reset button{
+    background-color: var(--othercolor);
+}
+
+.reset button:hover{
+    background-color: rosybrown;
+    color: var(--lightcolor);
+}
+
+/* POPUP */
+
+.popup{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.popup-content{
+    width: 400px;
+    height: 330px;
+    background-color: olive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2em;
+    border-radius: 10px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.other input{
+    width: 180px;
+    height: 23px;
+    align-items: center;
+    text-align: center;
+    padding: 3px;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid var(--secondarycolor);
+    background-color: peru;
+    color: var(--lightcolor);
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    text-align: center;
+}
+
+.other h3,h5{
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: bold;
+    color: peru;
+}
+
+h6{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    color: peru;
+}
+
+input[type="radio"]{
+    width: 15px;
+    height: 15px;
+}
+
+input[type="radio"]~label{
+    font-size: medium;
+    color: var(--lightcolor);
+}
+
+.other button{
+    background-color: peru;
+    color: var(--lightcolor);
+}
+
+.other button:hover{
+    background-color: var(--secondarycolor);
+    color: var(--lightcolor);
+}
+
+.popup-open{
+    display: inline-block;
+}
+
+#popup:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup:target .popup-content{
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-close{
+    color: peru;
+    font-size: medium;
+    position: absolute;
+    top: .5em;
+    right: 1em;
+}
+
+

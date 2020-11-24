@@ -1,0 +1,43 @@
+table{
+    background-color: lightgoldenrodyellow;
+    border-color: chocolate;
+    border-width: 20;
+    font-size: large
+}
+
+#month{
+    background-color: lightpink;
+    color: maroon;
+}
+
+#day{
+    background-color: khaki;
+    color:peru;
+}
+
+td{
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+div{
+    background: lightseagreen;
+    border-radius: 50px;
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+    overflow: hidden;
+}
+
+tbody{
+    text-align: center;
+}
+
+div[rel="cl1"]{
+    background: crimson;
+}
+
+div[rel="cl2"]{
+    background: dimgrey;
+}

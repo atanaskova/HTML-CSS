@@ -1,0 +1,75 @@
+*{
+    margin: 40px 20px;
+}
+
+body{
+    background-color: blueviolet;
+}
+
+table{
+    border;
+    border-radius: 20px;
+    padding: 5px;
+    overflow: hidden;
+    border-collapse: collapse;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    text-align: left;
+    background-color: khaki;
+    color: darkslategrey;
+}
+
+#main{
+    background-color: darkslategrey;
+    color: wheat;
+    text-align: left;
+    font-weight: bold;
+    font-size: larger;
+    font-style: oblique;
+    height: 50;
+}
+
+tr:nth-child(even){
+    background-color: grey;
+    color: goldenrod;
+}
+
+th[rel="q"]{
+    width: 80;
+    text-align: right;
+}
+
+th[rel="price"]{
+    width: 50;
+    text-align: right;
+}
+
+td[rel="price"]{
+    width: 50;
+    text-align: right;
+}
+
+td select{
+    float: right;
+}
+
+th[rel="name"]{
+    width: 200;
+}
+
+th[rel="id"]{
+    width: 100;
+}
+
+th[rel="total"]{
+    text-align: right;
+    width: 50;
+}
+
+td:last-of-type{
+    text-align: right;
+}
+
+
+
+

@@ -1,0 +1,85 @@
+<html>
+    <head></head>
+
+    <body>
+        <h1>
+            Software Order Form
+        </h1>
+        <form>
+            <fieldset align="left">
+                <legend>License details</legend>
+
+                <ul>
+                    <li>
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email">
+                    </li>
+                    <li>
+                        <label for="website">Website</label>
+                        <input type="text" id="website" name="website">
+                    </li>
+                    <li>
+                        <label for="number">Number of licenses</label>
+                        <input type="number" id="number" name="number">
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset align="left">
+                <legend>Billing details</legend>
+
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                    </li>
+                    <li>
+                        <label for="address">Address</label>
+                        <input type="address" id="address" name="address">
+                    </li>
+                    <li>
+                        <label for="code">Postal code</label>
+                        <input type="number" id="code" name="code">
+                    </li>
+                    <li>
+                        <label for="country">Country</label>
+
+                        <select id="country">
+                            <option selected value="Australia">Australia</option>
+                            <option value="Bulgaria">Bulgaria</option>
+                            <option value="Macedonia">Macedonia</option>
+                            <option value="France">France</option>
+                            <option value="Germany">Germany</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="phone">Phone(optional)</label>
+                        <input type="number" id="phone" name="phone">
+                    </li>
+                </ul>
+
+            </fieldset>
+
+            <fieldset align="left">
+                <legend>Payment details</legend>
+
+                <ul>
+                    <li>
+                        <label for="card">Card number</label>
+                        <input type="number" id="card" name="card">
+                    </li>
+                    <li>
+                        <label for="cvv">CVV code</label>
+                        <input type="number" id="cvv" name="cvv">
+                    </li>
+                    <li>
+                        <label for="date">Expiry date</label>
+                        <input type="month" id="date" name="date">
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+
+        <button>Place Your Order</button>
+    </body>
+</html>
